@@ -19,6 +19,6 @@ dependencies {
 }
 tasks.withType(Test) {
     useTestNG() {
-        suiteName 'Test Hotel Booking Site'
+        suiteName 'Careers Module'
     }
 }

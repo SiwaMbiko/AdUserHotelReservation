@@ -1,4 +1,4 @@
-package com.hotelbooking.common;
+package com.careersilab.common;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 public abstract class BaseTest {
 
     public static RemoteWebDriver driver;
+
     protected static RemoteWebDriver getDriver() {
         return driver;
     }
@@ -24,7 +25,7 @@ public abstract class BaseTest {
         System.setProperty("webdriver.chrome.driver",projectPath+"/drivers/chromedriver");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.get("http://hotel-test.equalexperts.io/");
+        driver.get("https://www.ilabquality.com/");
     }
 
     @AfterSuite(alwaysRun = true)
